@@ -10,9 +10,9 @@ url="https://github.com/Unity-Technologies/qstat"
 arch=('i686' 'x86_64')
 license=('Artistic-2.0')
 depends=('glibc')
-conflicts=('qstat-cvs' 'qstat-svn')
+conflicts=('qstat-cvs' 'qstat-svn' 'qstat-git')
 backup=('etc/qstat.cfg')
-source=("https://github.com/Unity-Technologies/qstat/archive/refs/tags/v${pkgver}.tar.gz")
+source=("${pkgname}-${pkgver}.tar.gz::https://github.com/Unity-Technologies/qstat/archive/refs/tags/v${pkgver}.tar.gz")
 sha512sums=('880549d220a9a9046910bc2e5564b09349870110c77249b66d2ca77143327c83473da31c00e7b70df45f48e6a5bcb3310487f73983d745a69e6aa6278a125278')
 
 build() {
